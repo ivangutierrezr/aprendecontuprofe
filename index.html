@@ -1,65 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta id="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Mi página personal</title>
+            <meta id="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+            <link rel="stylesheet" href="css/login.css">
+            <link rel = "icon" href = "assets/icon.png" type = "image/x-icon"> 
+            <title>Aprende con tu profe</title>
     </head>
     <body>
-        <header>
-            <!-- <h1 class="textoPrincipalNav">Aprende con tu profe</h1> -->
-            <div class="contenedorLogo">
+        <div class="contenedorPrincipalLogin">
+            <div class="contenedorLogin">
                 <img src="assets/logoAprende.png" alt="logoAPrendeConTuProfe">
+                asdasdasd
             </div>
-            <div class="perfilUsuario">
-                <div class="contenedorImagen">
-                    <img src="assets/sinFoto.png" alt="">
-                </div>
-                <div class="InformacionUsuario">
-                    <span>Nombres Usuario</span>
-                    <span>Apellidos Usuario</span>
-                </div>
-            </div>
-        </header>
-        <nav>
-            <a id="seccion1" class="itemMenuPrincipal" class="seleccionado" onclick="seleccionarSeccion(1)">Material</a>
-            <a id="seccion2" class="itemMenuPrincipal" onclick="seleccionarSeccion(2)">Foro</a>
-            <a id="seccion3" class="itemMenuPrincipal" onclick="seleccionarSeccion(3)">Calificaciones</a>
-            <a id="seccion4" class="itemMenuPrincipal" onclick="seleccionarSeccion(4)">Listado de Estudiantes</a>
-        </nav>
-        <aside class="menuLateral">
-            <a id="clase1" class="menuClases" onclick="seleccionarClase(1)" class="claseSeleccionada">Clase 1</a>
-            <a id="clase2" class="menuClases" onclick="seleccionarClase(2)">Clase 2</a>
-            <a id="clase3" class="menuClases" onclick="seleccionarClase(3)">Clase 3</a>
-            <a id="clase4" class="menuClases" onclick="seleccionarClase(4)">Clase 4</a>
-            <a id="clase5" class="menuClases" onclick="seleccionarClase(5)">Clase 5</a>
-        </aside>
-        <section class="mainContent">
-            <div class="">
-
-            </div>
-        </section>
-        <footer>
-            <p>@2020</p>
-        </footer>
-        <script>
-            function seleccionarSeccion(tipo) {
-                let cantidadOpciones = document.getElementsByClassName("itemMenuPrincipal").length
-                for (let i = 0; i < cantidadOpciones; i++) {
-                    document.getElementById("seccion"+(i+1)).classList.remove("seleccionado")
-                }
-                document.getElementById("seccion"+tipo).classList.add("seleccionado")
-            }
-
-            function seleccionarClase(tipo) {
-                let cantidadClases = document.getElementsByClassName("menuClases").length
-                for (let i = 0; i < cantidadClases; i++) {
-                    document.getElementById("clase"+(i+1)).classList.remove("claseSeleccionada")
-                }
-                document.getElementById("clase"+tipo).classList.add("claseSeleccionada")
-            }
-        </script>
+        </div>
     </body>
 </html>
