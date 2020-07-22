@@ -35,6 +35,8 @@ body {
           flex-direction: column;
   background-image: url("../assets/fondoLogin.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .contenedorPrincipalLogin .contenedorLogin {
   display: -webkit-box;
