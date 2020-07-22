@@ -1,7 +1,7 @@
 :root {
-    --colorPrimario: rgba(112, 180, 209, 1);
-    --colorSecundario: rgba(182, 206, 217, 1);
-    --colorLetras: rgba(44, 70, 82, 1);
+    --colorPrimario: rgba(182, 206, 217, 1);
+/*     --colorSecundario: rgba(182, 206, 217, 1); */
+    --colorSecundario: rgba(44, 70, 82, 1);
 }
 
 * {
@@ -64,7 +64,7 @@ header {
             width: 50px;
             height: 50px;
             border-radius: 25%;
-            border: 2px solid var(--colorPrimario);
+            border: 2px solid var(--colorSecundario);
             
             img {
                 width: 45px;
@@ -81,7 +81,7 @@ header {
 
             span {
                 font-size: 14px;
-                color: var(--colorLetras);
+                color: var(--colorSecundario);
                 font-weight: 500;
             }
         }
@@ -111,22 +111,22 @@ nav {
         height: 40px;
         margin: 0 10px;
         padding: 10px;
-        color: var(--colorLetras);
+        color: whitesmoke;
         font-weight: 600;
         text-decoration: none;
     }
 
     .itemMenuPrincipal:hover {
         background-color: rgba(112, 180, 209, 0.2);
-        color: var(--colorLetras);
-        /* border-bottom: 3px solid var(--colorLetras); */
+        /* color: var(--colorSecundario); */
+        /* border-bottom: 3px solid var(--colorSecundario); */
         box-shadow: 0 2px 2px 1px rgba(44, 70, 82, 0.2);
     }
 
     .itemMenuPrincipal.seleccionado {
-        transition: all .5s ease-out;
         background-color: white;
-        border: 3px solid var(--colorLetras);
+        border: 3px solid var(--colorPrimario);
+        color: var(--colorSecundario)
     }
 }
 
@@ -144,7 +144,7 @@ footer {
     width: 100%;
     height: 70px;
     font-weight: 500;
-    color: var(--colorLetras);
+    color: var(--colorSecundario);
 }
 
 .menuLateral {
@@ -153,7 +153,7 @@ footer {
     left: 0;
     width: 160px;
     height: calc(100% - 210px);
-    border-right: 5px solid var(--colorPrimario);
+    border-right: 5px solid var(--colorSecundario);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -165,12 +165,12 @@ footer {
         width: auto;
         margin: 5px 0;
         padding: 10px;
-        color: var(--colorLetras);
+        color: var(--colorSecundario);
         font-weight: 600;
         text-decoration: none;
     }
 
     .menuClases.claseSeleccionada {
-        border-bottom: 3px solid var(--colorPrimario);
+        border-bottom: 3px solid var(--colorSecundario);
     }
 }

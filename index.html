@@ -9,11 +9,40 @@
             <title>Aprende con tu profe</title>
     </head>
     <body>
-        <div class="contenedorPrincipalLogin">
+        <div class="contenedorPrincipalLogin" id="contenedorPrincipalLogin">
             <div class="contenedorLogin">
                 <img src="assets/logoAprende.png" alt="logoAPrendeConTuProfe">
-                asdasdasd
+                <div class="formularioLogin">
+                    <p class="tituloLogin">
+                        Inicio de sesión
+                    </p>
+                    <form class="login" action="home.html">
+                        <input type="text" id="nombreUsuario" placeholder="Nombre de usuario">
+                        <input type="password" id="password" placeholder="Contraseña">
+                        <input type="submit" id="submit" value="Iniciar sesión">
+                    </form>
+                    <a class="olvidastePassword">
+                        ¿Olvidaste tu contraseña?                      
+                    </a>
+                </div>
             </div>
         </div>
     </body>
+    <script>
+        let slideIndex = 3
+        function showSlides() {
+            console.log(slideIndex)
+            var slides = document.getElementById("contenedorPrincipalLogin");
+            rutaArchivo = '../assets/fondoLogin'+slideIndex+'.jpg'
+            console.log(rutaArchivo)
+            slides.style.backgroundImage = "url(" + rutaArchivo + ")";
+            if (slideIndex == 3) {
+                slideIndex = 0
+            } else {
+                slideIndex++
+            }
+            setTimeout(showSlides, 5000);
+        }
+        setTimeout(showSlides, 5000);
+    </script>
 </html>
