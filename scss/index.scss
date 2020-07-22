@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -141,7 +145,6 @@ footer {
     font-weight: 500;
     color: var(--colorLetras);
 }
-
 
 .menuLateral {
     position: fixed;
