@@ -11,7 +11,7 @@ const { Title } = Typography;
 
 export default class ConfigEstudiante extends Component {
     state = {
-        urlDB: 'http://127.0.0.1:8000',
+        urlDB: 'https://aprendecontuprofeapi.herokuapp.com/',
         spinText: "Cargando Información",
         loading: true,
         edicion: false,
