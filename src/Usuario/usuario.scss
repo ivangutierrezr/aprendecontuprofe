@@ -1,0 +1,86 @@
+.layout-usuario {
+    min-height: 100vh;
+    width: 100%;
+
+    .layout-tab {
+        padding: 24px;
+
+        .site-layout-content {
+            background: #fff;
+            padding: 24px;
+            /* min-height: calc(100% - 130px); */
+            margin-bottom: 50px;
+        }
+    }
+
+    .content-usuario {
+        padding: 20px;
+        margin-bottom: 50px;
+        
+        .content-usuario-space {
+            /* overflow-y: auto; */
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .content-usuario-nueva-clase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px solid green;
+            padding: 5px 10px;
+            
+            span {
+                margin-left: 15px;
+                color: green;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+
+        .content-space-foro {
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+        }
+        .publicado-hace {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .content-replicas-foro {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 100%;
+            padding: 10px;
+
+            .replica-foro-autor {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .replica-foro-comentario {
+                font-size: 16px;
+            }
+            .replica-foro-fecha {
+                font-size: 13px;
+                font-weight: 300;
+                color: gray;
+            }
+            .replica-foro-eliminar-comentario {
+                font-size: 12px;
+                text-decoration: underline;
+                font-weight: 600;
+            }
+            .replica-foro-autor.docente-replica {
+                color: green;
+            }
+            .replica-foro-autor.autor-replica {
+                color: rgb(8, 37, 125);
+            }
+        }
+        .content-replicas-foro.autor-replica {
+            background-color: rgba(8, 37, 125, 0.1);
+        }
+    }
+}

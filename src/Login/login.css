@@ -1,121 +1,91 @@
-.contenedorPrincipalLogin {
+.contenedor-principal-login {
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-image: url("./assets/fondoLogin1.jpg");
   background-size: cover;
   background-position: center;
   /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  transition: background-image 1s ease-in-out; */
-}
-.contenedorPrincipalLogin .contenedorLogin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    transition: background-image 1s ease-in-out; */ }
+  .contenedor-principal-login .contenedor-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    border: 3px solid var(--colorSecundario);
+    border-radius: 25px;
+    background-color: whitesmoke; }
+    @media only screen and (max-width: 600px) {
+      .contenedor-principal-login .contenedor-login {
+        width: 80%; } }
+    .contenedor-principal-login .contenedor-login img {
+      width: 90%;
+      margin-top: 20px; }
+    .contenedor-principal-login .contenedor-login .formulario-login {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
+      align-items: center;
+      -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  width: 400px;
-  height: auto;
-  border: 3px solid var(--colorSecundario);
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-@media only screen and (max-width: 600px) {
-  .contenedorPrincipalLogin .contenedorLogin {
-    width: 80%;
-  }
-}
-.contenedorPrincipalLogin .contenedorLogin img {
-  width: 90%;
-  margin-top: 20px;
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin .tituloLogin {
-  width: 100%;
-  text-align: center;
-  color: var(--colorSecundario);
-  font-size: 25px;
-  font-weight: 600;
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin .loginContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 80%;
-  margin-top: 15px;
-  /* input[type=submit] {
-      width: auto;
-      margin: 20px 0;
-      padding: 10px 20px;
-      background-color: var(--colorSecundario);
-      color: white;
-  } */
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin .loginContainer .field {
-  width: 100%;
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin .loginContainer .is-grouped {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.contenedorPrincipalLogin .contenedorLogin .formularioLogin .olvidastePassword {
-  width: 100%;
-  text-align: center;
-  color: var(--colorSecundario);
-  margin: 20px 0;
-}
+      flex-direction: column; }
+      .contenedor-principal-login .contenedor-login .formulario-login .titulo-login {
+        width: 100%;
+        text-align: center;
+        color: var(--colorSecundario);
+        font-size: 25px;
+        font-weight: 600; }
+      .contenedor-principal-login .contenedor-login .formulario-login .login-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 15px; }
+      .contenedor-principal-login .contenedor-login .formulario-login .olvidaste-password {
+        width: 100%;
+        text-align: center;
+        color: var(--colorSecundario);
+        margin: 20px 0; }

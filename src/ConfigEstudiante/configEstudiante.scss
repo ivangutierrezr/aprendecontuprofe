@@ -1,0 +1,18 @@
+.grid-config-estudiante {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .grid-config-estudiante-form {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid var(--colorPrimario);
+    }
+
+    .content-form-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

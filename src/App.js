@@ -4,6 +4,8 @@ import {
   Route, HashRouter, Link
 } from 'react-router-dom'
 import Login from './Login'
+import Admin from './Admin'
+import Usuario from './Usuario'
 import './App.css';
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
           <HashRouter>
             <div className="content">
               <Route path="/" exact component={Login} />
+              <Route path="/admin" exact component={Admin} />
+              <Route path="/home" exact component={Usuario} />
             </div>
           </HashRouter>
         }
