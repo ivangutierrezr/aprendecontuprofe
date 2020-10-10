@@ -10,6 +10,7 @@ import IntroduccionDocente from './introduccionDocente'
 import ClasesDocente from './clasesDocente'
 import ClasesEstudiante from './clasesEstudiante'
 import Foro from './foro'
+import IntroduccionEstudiante from './introduccionEstudiante'
 /* import ConfigDocente from '../ConfigDocente';
 import ConfigEstudiante from '../ConfigEstudiante';
 import ConfigAsignatura from '../ConfigAsignatura'; */
@@ -476,6 +477,9 @@ export default class Usuario extends Component {
                     }
                     {
                         (this.state.rol == 2 && this.state.introduccion) && <IntroduccionDocente asignatura={this.state.asignatura} cambiarDatosAsignatura={this.cambiarDatosAsignatura} guardarDatosAsignatura={this.guardarDatosAsignatura} />
+                    }
+                    {
+                        (this.state.rol == 3 && this.state.introduccion) && <IntroduccionEstudiante asignatura={this.state.asignatura} />
                     }
                     {
                         (this.state.rol == 2 && this.state.clases) && <Content className="content-usuario" style={{marginTop: '64px'}}>
