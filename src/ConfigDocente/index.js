@@ -50,6 +50,10 @@ export default class ConfigDocente extends Component {
             })
             .catch(function (error) {
                 console.log(error)
+                self.setState({
+                    docentes: [],
+                    loading: false
+                })
             })
     }
 

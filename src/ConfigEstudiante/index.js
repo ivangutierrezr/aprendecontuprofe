@@ -52,6 +52,10 @@ export default class ConfigEstudiante extends Component {
             })
             .catch(function (error) {
                 console.log(error)
+                self.setState({
+                    estudiantes: [],
+                    loading: false
+                })
             })
     }
 

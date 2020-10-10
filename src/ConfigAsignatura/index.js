@@ -53,6 +53,10 @@ export default class ConfigAsignatura extends Component {
             })
             .catch(function (error) {
                 console.log(error)
+                self.setState({
+                    asignaturas: [],
+                    loading: false
+                })
             })
     }
 
