@@ -32,18 +32,21 @@ export default class Foro extends Component {
                     <Title level={2}>
                         { this.props.asignatura.foro[this.props.posForo].title }
                     </Title>
-                    <Popconfirm 
-                        title="¿Está seguro que desea eliminar este foro?" 
-                        icon={<QuestionCircleOutlined style={{ color: 'red' }} />}
-                        onConfirm={() => this.props.guardarDatosAsignatura(6, this.props.posForo)}
-                        onCancel={() => message.success('Eliminación cancelada')}
-                        okText="Si"
-                        cancelText="No"
-                    >
-                        <Button type="danger" shape="round" icon={<DeleteOutlined />} size="default">
-                            Eliminar foro
-                        </Button>
-                    </Popconfirm>
+                    {
+                        this.props.rol == 2 && <Popconfirm 
+                            title="¿Está seguro que desea eliminar este foro?" 
+                            icon={<QuestionCircleOutlined style={{ color: 'red' }} />}
+                            onConfirm={() => this.props.guardarDatosAsignatura(6, this.props.posForo)}
+                            onCancel={() => message.success('Eliminación cancelada')}
+                            okText="Si"
+                            cancelText="No"
+                        >
+                            <Button type="danger" shape="round" icon={<DeleteOutlined />} size="default">
+                                Eliminar foro
+                            </Button>
+                        </Popconfirm>
+                    }
+                    
                 </div>
                 <Space direction="vertical" className="content-space-foro">    
                     {

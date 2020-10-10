@@ -542,7 +542,7 @@ export default class Usuario extends Component {
                                     </div>
                                 }
                                 {
-                                    this.state.asignatura.foro.length > 0 && <Foro asignatura={this.state.asignatura} posForo={this.state.posForo} guardarDatosAsignatura={this.guardarDatosAsignatura} editarComentario={this.editarComentario} itemEliminado={this.state.itemEliminado} nuevoComentario={this.state.nuevoComentario} estudiantes={this.state.estudiantes} usuario={this.state.usuario} docente={this.state.docente}/>
+                                    this.state.asignatura.foro.length > 0 && <Foro asignatura={this.state.asignatura} posForo={this.state.posForo} guardarDatosAsignatura={this.guardarDatosAsignatura} editarComentario={this.editarComentario} itemEliminado={this.state.itemEliminado} nuevoComentario={this.state.nuevoComentario} estudiantes={this.state.estudiantes} usuario={this.state.usuario} docente={this.state.docente} rol={this.state.rol} />
                                 }
                             </div>
                         </Content>
