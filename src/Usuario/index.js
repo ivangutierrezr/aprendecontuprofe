@@ -393,6 +393,8 @@ export default class Usuario extends Component {
                                     clases: false,
                                     itemEliminado: false,
                                     posClase: null,
+                                    foros: false,
+                                    posForo: null,
                                     menuKeys: ['s1'],
                                     openKeys: []
                                 })}>
@@ -407,6 +409,7 @@ export default class Usuario extends Component {
                                         menuKeys: ['s2'],
                                         openKeys: [],
                                         foros: false,
+                                        posForo: null,
                                     })}>
                                         Clases
                                     </Menu.Item>
@@ -424,6 +427,7 @@ export default class Usuario extends Component {
                                                             posClase: c,
                                                             menuKeys: ['c'+c],
                                                             foros: false,
+                                                            posForo: null,
                                                         })
                                                     }}>
                                                         Clase {c+1}
