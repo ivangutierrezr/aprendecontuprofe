@@ -105,7 +105,7 @@ export default class Foro extends Component {
                                     {/* <span className={"replica-foro-comentario " + claseAutor}>{replica.comentario}</span> */}
                                     <span className={"replica-foro-fecha " + claseAutor}>{moment(replica.fecha).fromNow()}</span>
                                     {
-                                        replica.autor == this.props.usuario.id && <Popconfirm 
+                                        (replica.autor == this.props.usuario.id || this.props.rol == 2) && <Popconfirm 
                                             title="¿Está seguro que desea eliminar este comentario?" 
                                             icon={<QuestionCircleOutlined style={{ color: 'red' }} />}
                                             onConfirm={() => this.props.guardarDatosAsignatura(8, this.props.posForo, r)}
