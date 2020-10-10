@@ -47,7 +47,7 @@ export default class Usuario extends Component {
     rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4'];
 
     state = {
-        urlDB: 'https://aprendecontuprofeapi.herokuapp.com/',
+        urlDB: 'https://aprendecontuprofeapi.herokuapp.com',
         spinText: "Cargando Información",
         loading: true,
         irLogin: false,

@@ -8,7 +8,7 @@ var sliderImages
 
 export default class Login extends Component {
   state = {
-    urlDB: 'https://aprendecontuprofeapi.herokuapp.com/',
+    urlDB: 'https://aprendecontuprofeapi.herokuapp.com',
     spinText: "Cargando Información",
     loading: false,
     username: "",

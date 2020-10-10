@@ -11,7 +11,7 @@ const { Title } = Typography;
 
 export default class ConfigAsignatura extends Component {
     state = {
-        urlDB: 'https://aprendecontuprofeapi.herokuapp.com/',
+        urlDB: 'https://aprendecontuprofeapi.herokuapp.com',
         spinText: "Cargando Información",
         loading: true,
         edicion: false,
